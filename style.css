@@ -1,0 +1,50 @@
+#video-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+#chat-container{
+    width: 95%;
+    margin: auto;
+}
+
+.video{
+    padding: 10px;
+    width: 50%;
+    pointer-events: none;
+}
+
+
+#controler-container{
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;  
+    justify-content: space-between;
+}
+.button-container,.info-container{
+    flex: 1;
+}
+
+#btnNext,#btnStop{
+    width:150px;
+    height:150px;
+    font-size:15px;
+    color:white;
+    font-weight:700;
+}
+
+#btnNext{
+    background-color: #63d528;
+}
+
+#btnStop{
+    background-color: #7e2727;
+}
+
+#btnNext:hover{
+    cursor: pointer;
+}
+
+#btnStop:hover{
+    cursor: pointer;
+}

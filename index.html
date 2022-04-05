@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ole Tv</title>
+    <script src="jquery.js"></script>
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="chat-container">
+      <p id="online"></p>
+      <p id="connection"></p>
+      <div id="video-container">
+        <video autoplay controls class="video" id="localStream"></video>
+        <video autoplay controls class="video" id="remoteStream"></video>
+      </div>
+      <div id="controler-container">
+        <div class="button-container">
+          <button id="btnNext">Next</button>
+          <button id="btnStop">Stop</button>
+        </div>
+        <div class="info-container">
+          <p id="remote-connection"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.socket.io/4.4.1/socket.io.min.js"
+    integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H"
+    crossorigin="anonymous"
+  ></script>
+  <script src="main.js"></script>
+</html>
